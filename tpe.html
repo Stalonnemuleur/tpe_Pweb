@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+ 
+<html>
+<head>
+	<meta charset = utf-8>
+	<link rel="stylesheet" href="style.css"/>
+	<title> mon travail personnel</title>
+</head>
+<body>
+    <header><h1>site_statique</h1> : KWATCHOU NGONGANG STALONNE MULEUR </br>
+    <em>MATRICUL:</em> 20A645FS L2 INF </header>
+
+	<p><em>ACCEUIL</em></p> 
+
+
+	
+    <h2> cour</h2>
+    <h2>tpe thème: la methode RAISE</h2>
+   
+    <p class="plan">PLAN DU TRAVAIL :
+    	<ul>
+<li>INTRODUCTION</li>
+<li>HISTORIQUE</li>
+<li>I.	GENERALITES SUR LA METHODE RAISE (RIGOUROUS APPROACH TO INDUSTRIAL SOFTWARE ENGENEERING)</li>
+<li>1-DEFINITIONS</li>
+<li>2- BUT DE LA METHODE RAISE</li>
+<li>3- SYNTAXE DE LA METHODE RAISE</li>
+<li>II.	LANGAGE DE SPECIFICATION RSL ( RAISE SPECIFICATION LANGAGE)</li>
+          <li>  1-DEFINITIONS</li>
+      <li>2-LE BUT DU LANGAGE RSL</li>
+<li>CONCLUSION</li>
+</ul>
+</p>
+<p class="introduction">
+	INTRODUCTION</br>
+Une organisation peut être vue comme un système (ensemble d’élément en interaction dynamique organiser en fonction d’un but). Le Génie Logiciel quant-à lui est la science qui étudie les méthodes de travail et les bonnes pratiques de l’ingénierie du développement des logiciels. Il a été introduit à la fin des années soixante lors d’une conférence ténue de ce qu’on appelait la crise du logiciel <<crisis software>>, le développement de logiciel était en crise. Il faillait de nouvelles technique et nouvelles méthodes pour contrôler la complexité inhérente aux grands systèmes logiciels. Cependant, plusieurs méthodes existent de nos pour la conduite d’un projet logiciel jusqu’à la réalisation du produit logiciel de haute qualité. Ces méthodes sont entre autres la méthode MERISE, la méthode UML, la méthode VDM et la méthode RAISE cette dernière fera l’objet de notre travail.
+</p>
+<p></p>
+<p class="travail">
+	
+ </br>HISTORIQUE</br>
+  RAISE (Rigourous Approach to Industrial Software Engeneering) en français Approche Rigoureuse du Génie Logiciel Industriel a été développée dans le cadre du projet européen SPRIT II Lacos dans les années 1990, Dines Bjorner. Il se compose d’un ensemble d’outils conçus pour un langage de spécification (RSL) pour le développement des logiciels. Il est particulièrement adopté par l’UNU-UST à Macao, qui organise des formations sur place et dans le monde, notamment dans le pays en développement. 
+</br></br>I.	GENERALITES SUR LA METHODE RAISE (Rigourous Approach to Industrial Software Engeneering)</br>
+</br>1.	Définition</br> 
+La méthode formelle RAISE (Rigorous Approach to Industrial software Engineering) est une méthode conceptuelle des systèmes d’information tout comme MERISE qui, fournit des équipements pour l'usage industriel des méthodes formelles durant le développement des logiciels. 
+La méthode RAISE est utilisée pour générer des erreurs d’utilisation et peut être utilisé à la place de l’instruction Error. La méthode RAISE est utilisée pour générer des erreurs lors de la création de module des classes, car l’objet Err transmet des informations plus détailles que si vous générez des erreurs avec l’instruction Error. 
+Lorsqu'une erreur d'exécution se produit, les propriétés de l'objet Err sont renseignées avec des informations qui identifient de manière unique l'erreur et des informations qui peuvent être utilisées pour la gérer. Pour générer une erreur d'exécution dans votre code, utilisez la méthode RAISE. 
+</br></br>2.	But de la méthode RAISE</br>
+Comme les autres notations formelles, RAISE est basé sur les notations mathématiques. 
+Actuellement il existe des outils qui supportent ce langage. Le but de RAISE est d’améliorer le processus de développement de logiciel en soutenant une discipline qui peut être projetée et effectuée dans un contexte industriel. C’est pour cela qu’ils ont développé la méthode RAISE, et le langage de spécification RSL (RAISE Spécification langage). En plus de cet objectif principal cité ci-dessus nous pouvons également ajouter : 
+</br>•	Le développement de logiciels plus fiables ;  
+</br>•	Le développement de logiciels avec peu d'erreurs ;   
+</br>•	L’amélioration de la documentation de logiciels ; 
+</br>•	La maintenabilité de logiciels </br>
+</br>3.	Syntaxe de la méthode RAISE</br>
+Object. RAISE (number, source, description, helpfile, helpcontext)
+Arguments
+Object
+Toujours l’objet Err.
+Number
+Un sous-type entier Long qui identifie la nature de l’erreur. Les erreurs VBscript (tant définies par VBscript que par l’utilisateur) sont comprises dans la plage 0-65535.
+Source
+Une l’expression de chaine nommant l’objet ou l’application ayant initialement généré l’erreur. Lorsque vous définissez cette propriété pour un objet automation, utiliser la forme project.class. Si rien n’est spécifié, l’identificateur de ressource du projet VBScript en cours est utilisé.
+Description
+Une expression de chaine décrivant l’erreur. Si elle n’est pas spécifiée, la valeur contenue dans l’argument number est examinée. Si elle peut être associée à un code d’erreur d’exécution VBScript, une chaine fournie par VBScript est utilisée comme description. S’il n’existe aucune erreur VBScript correspondant à la valeur de l’argument number, un message d’erreur générique est utilisé.
+Helpfile
+Le chemin d’accès complet du fichier d’aide contenant l’aide relative à cette erreur. Si cet argument n’est pas spécifié, VBScript utilise le lecteur, le chemin d’accès et le nom du fichier d’aide VBScript.
+Helpcontext
+L’identificateur de contexte identifiant une rubrique contenue dans l’argument helpfile qui fournit l’aide correspondant à l’erreur. S’il est omis, l’identificateur de contexte du fichier d’aide VBScript por l’erreur correspondant à la propriété number est utilisé, s’il existe.
+Remarque 
+Tous les arguments sont facultatifs à l’exception de number. Cependant, si vous utilisez la méthode RAISE sans spécifier certains arguments et que les définitions des propriétés de l’objet Err continnent des valeurs qui n’ont pas encore été supprimées, ces valeurs deviennent les valeurs de votre erreur.
+Lorsque vous définissez la propriété number pour votre propre code d’erreur dans un objet Automation, vous ajoutez le numéro de votre code d’erreur à la constante vbobjectError. Par exemple, pour générer le numéro d’erreur 1050, affectez vbobjectError+1050 à la propriété number.</br>
+
+</br>II. LANGAGE DE SPECIFICATION RSL (RAISE Specification Language)</br>
+</br>1.	Définitions</br>
+Le langage de spécification RSL, est développé pour pouvoir utiliser la méthode RAISE. 
+L’avantage de RSL est que les utilisateurs doivent seulement connaître une notation en plus du langage de programmation utilisé pour l'exécution et l’implémentation du logiciel, vu que le développement est entièrement exécuté avec RSL. En fait, la structuration de RSL facilite la décomposition des différents modules des systèmes et facilite leur réutilisation. Bien sûr, RSL doit être considéré comme un modèle mathématique et comme une représentation mathématique des exigences essentielles à développer. La distinction entre les différentes parties de la spécification présentée à plusieurs niveaux, se différencie par leurs niveaux d’abstraction. .4.3. D’UML vers RSL  
+Nous avons précisé dans les paragraphes précédents, comment les chercheurs dans le domaine du génie logiciel s’intéressent au développement des traducteurs pour les représentations graphiques (qui sont facile à manipuler) vers les représentations formelles pour effectuer les analyses nécessaires. Egalement à l’approche UML/PVS, un outil était développé sous Java (pour qu’il soit un outil portable) au sein de l’IIST-UNU18 pour générer automatiquement des fichiers en RSL qui correspond à la représentation du diagramme de classes en UML. 
+L’utilisation globale de l’outil UML2RSL peut être simplifiée avec :</br>   
+</br>•	La spécification de la classe diagramme en UML,  
+</br>•	Exportation du model UML en XML,  
+</br>•	L’utilisation du traducteur pour générer la spécification en RSL</br> 
+</b></br>2.	Le but du langage RSL</br>
+En fait, les tests de cas supportés par le langage de programmation RSL ont pour but d’appliquer un ensemble des tests sur la spécification formelle de l’outil. Le but des tests de cas est de découvrir les erreurs le plutôt possible, avant l’implémentation de l’outil avec un tel langage de programmation. 
+Le RSL est utilisé, dans le but de spécifier toutes fonctionnalités nécessaires pour la recherche d’impact et élimination de l’ambiguïté présenté au niveau de la spécification avec UML. Le choix de spécifier les fonctionnalités de notre outil explicitement avec RSL est basé sur deux raisons : premièrement pour éliminer l’ambiguïté présentée lors de l’utilisation des diagrammes UML. Deuxièmement, pour appliquer un ensemble de tests sur la spécification concrète, surtout avant le codage de l’outil avec un tel langage de programmation. L’utilisation du traducteur UML2RSL est composée de trois étapes principales : </br> 
+</br>•	Une saisie graphique du diagramme de classes.  
+</br>•	Une génération automatique du diagramme de classes, dans un format XML.  
+</br>•	Un parsing pour le fichier obtenu en XML (en utilisant le traducteur UML2RSL), afin d’obtenir le squelette de la spécification de l’outil avec RSL. En effet, le traducteur vérifie la syntaxe du diagramme de classes avant la génération automatique de la spécification primaire, sinon il génère des messages d’erreurs.  
+Le résultat de la génération du diagramme UML en RSL est modulaire. Cette génération consiste en plusieurs fichiers. L’un des fichiers générés par le traducteur est nommé SYSTEM.rsl. Le module System.rsl correspond au module du plus haut niveau de structuration de la spécification en RSL. Il contient la spécification de toutes les fonctionnalités présentées dans les autres modules auxiliaires. Lors de la génération de la spécification vers RSL, chaque classe est traduite avec deux modules. Le premier module (ex. PROJECT) représente la classe avec ses attributs et il prend le même nom que la classe. Le deuxième module (ex. PROJECTS) représente l’ensemble des objets existants d’une même classe.  
+</p> </br>
+<p class="conclusion">
+	CONCLUSION</br>
+En somme, la méthode RAISE est une méthode de gestion d’erreur en génie logiciel. Tout programme en exécution peut être sujet à des erreurs pour lesquelles des stratégies de détection et de réparation sont possible.  Ces erreurs ne sont pas de bugs mais des conditions particulières(ou condition exceptionnelles, ou exceptions) dans le déroulement normal d’une partie d’un programme. Le traitement d’une situation exceptionnelle peut nécessiter de revenir « dans le passé » de l’exécution du programme, c’est-à-dire remonter brutalement la chaine d’appels pour annule une opération fautive, ou encore modifier les valeurs de certains variables, puis prendre l’exécution du programme un peu avant le site de l’erreur 
+
+</p>
+<footer> <h3>merci d'avoir visité mon site</h3></br><span>UNIVERSITE DE NGAOUNDERE </br> coordonnateur:<em>Dr ADAMOU</em></span></footer>
+
+
+</body>
+</html>
